@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Card</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bingoCard.css">
+    <script src="/javascript/bingoCard.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="bingo-card default">
+            <div class="bingo-letters">
+                <p class="default">b</p>
+                <p class="default">i</p>
+                <p class="default">n</p>
+                <p class="default">g</p>
+                <p class="default">o</p>
+            </div>
+            <div class="bingo-numbers default"></div>
+        </div>
+        <div class="mini-container">
+            <button>refresh numbers</button>
+        </div>
+        <div class="mini-container">
+            <h2>settings</h2>
+            <form action="">
+                <label for="theme">choose a theme:</label>
+                <select name="theme" id="theme">
+                    <option value="default">default</option>
+                    <option value="black">black & white</option>
+                    <option value="robot">robot</option>
+                    <option value="green">green</option>
+                    <option value="vintage">vintage</option>
+                    <option value="stars">stars</option>
+                </select>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
