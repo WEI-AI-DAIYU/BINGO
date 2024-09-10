@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+body {
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    background-color: rgb(204,204,204);
+}
+.mini-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 320px;
+}
+h2 {
+    text-transform: capitalize;
+}
+label {
+    font-size: 1.3em;
+    text-transform: capitalize;
+}
+select {
+    font-size: 1em;
+    text-transform: capitalize;
+    width: 50%;
+    padding: 2px;
+}
+.mini-container > button {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    padding: 8px;
+    width: 100%;
+}
+/* default */
+.bingo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 383px;
+    gap: 20px;
+    border: 1px solid transparent;
+}
+.bingo-letters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 250px;
+    /* border: 1px solid red; /* debug */
+}
+
+.bingo-letters > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "arial", sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 900;
+    
+    /* border: 1px solid red;  /* debug */
+}
+.bingo-numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-right: 1px solid;   /* debug */
+    border-bottom: 1px solid;   /* debug */
+    width: 250px;
+    height: 250px;
+}
+.column-container {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid ;   /* debug */
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 48.8px;
+    width: 48.8px;
+    border-top: 1px solid;
+}
+.box > p:not(.free) {
+    font-size: 2em;
+}
+.free {
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+/* default */
+.bingo-card.default {
+    background-color: rgb(255,37,80);
+}
+.bingo-numbers.default {
+    background-color: rgb(255, 255, 255);
+}
+.bingo-letters > p.default {
+    color: white;
+}
+.box > p.default {
+    color: white;
+}
+.box.default {
+    border-color: rgb(0, 0, 0);
+}
+.column-container.default {
+    border-color: rgb(0, 0, 0);
+}
+
+
+/* black */
+.bingo-card.black {
+    background-color: rgb(27,31,25);
+}
+.bingo-numbers.black {
+    background-color: rgb(33,37,31);
+    border-color: rgb(255, 255, 255);
+}
+.bingo-letters > p.black {
+    color: white;
+}
+.box > p.black {
+    color: white;
+}
+.box.black {
+    border-color: rgb(255, 255, 255);
+}
+.column-container.black {
+    border-color: rgb(255, 255, 255);
+}
+
+/* robot */
+.bingo-card.robot {
+    background-image: url("/assets/theme/robot.jpg");
+    background-size: cover;
+}
+.bingo-numbers.robot {
+    background-color: rgba(33,41,51,0.5);
+    border-color: rgb(236,181,0);
+}
+.bingo-letters > p.robot {
+    color: rgb(236,181,0);
+}
+.box > p.robot {
+    color: rgb(236,181,0);
+}
+.box.robot {
+    border-color: rgb(236,181,0);
+}
+.column-container.robot {
+    border-color: rgb(236,181,0);
+}
+
+/* green */
+.bingo-card.green {
+    background-color: rgb(60,103,72);
+}
+.bingo-numbers.green {
+    background-color: rgb(181,179,175);
+    border-color: rgb(60,103,72);
+}
+.bingo-letters > p.green {
+    color: rgb(245,157,67);
+    font-family: 'Poppins';
+}
+.box > p.green {
+    color: rgb(66,73,88);
+    
+}
+.box.green {
+    border-color: rgb(60,103,72);
+}
+.column-container.green {
+    border-color: rgb(60,103,72);
+}
+
+/* vintage */
+.bingo-card.vintage {
+    background-image: url("/assets/theme/vintage.jpg");
+    background-size: cover;
+}
+.bingo-numbers.vintage {
+    background-color: rgba(33,41,51,0.5);
+    border-color: rgb(236,181,0);
+}
+.bingo-letters > p.vintage {
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 3px 0 rgb(122, 122, 122);
+}
+.box > p.vintage {
+    color: rgb(236,181,0);
+}
+.box.vintage {
+    border-color: rgb(236,181,0);
+}
+.column-container.vintage {
+    border-color: rgb(236,181,0);
+}
+
+/* stars */
+.bingo-card.stars {
+    background-image: url("/assets/theme/stars.jpg");
+    background-size: cover;
+}
+.bingo-numbers.stars {
+    background-color: rgba(33,41,51,0.5);
+    border-color: rgb(236,181,0);
+}
+.bingo-letters > p.stars {
+    color: rgb(236,181,0);
+}
+.box > p.stars {
+    color: rgb(236,181,0);
+}
+.box.stars {
+    border-color: rgb(236,181,0);
+}
+.column-container.stars {
+    border-color: rgb(236,181,0);
+}
+
+.box.clicked {
+    background-color: red;
+}
