@@ -171,7 +171,7 @@ button.addEventListener("click", ()=> {
     btnContainer.appendChild(resetBtn);
 
     // Remove the button if totalValue reaches or exceeds 5
-    if (totalValue == 4) {
+    if (totalValue == 74) {
         btnContainer.removeChild(button); // Remove the button
     }
 });
